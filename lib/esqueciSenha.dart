@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(),
       home: LoginApp(),
     );
   }
@@ -28,8 +29,7 @@ class _LoginAppState extends State<LoginApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[30],
-      resizeToAvoidBottomInset: true,
+      // resizeToAvoidBottomInset: false,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Center(
@@ -44,7 +44,7 @@ class _LoginAppState extends State<LoginApp> {
                   height: 75,
                 ),
                 Text(
-                  'Bem Vindo!',
+                  'Esqueceu sua senha?',
                   style: GoogleFonts.plusJakartaSans(
                     textStyle:
                         TextStyle(fontWeight: FontWeight.w600, fontSize: 36),
@@ -54,7 +54,7 @@ class _LoginAppState extends State<LoginApp> {
                   height: 10,
                 ),
                 Text(
-                  'Faça o login e entre na plataforma.',
+                  'Digite seu e-mail e recupere!',
                   style: GoogleFonts.plusJakartaSans(
                     textStyle:
                         TextStyle(fontWeight: FontWeight.w500, fontSize: 14),
@@ -75,7 +75,7 @@ class _LoginAppState extends State<LoginApp> {
                           color: Colors.grey,
                         ),
                       ),
-                      fillColor: Colors.grey[200],
+                      fillColor: Colors.grey[100],
                       filled: true,
                       border: OutlineInputBorder(),
                       labelText: 'E-mail',
@@ -84,70 +84,54 @@ class _LoginAppState extends State<LoginApp> {
                 ),
                 //Senha
                 SizedBox(
-                  height: 15,
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                  child: TextField(
-                    obscureText: false,
-                    decoration: InputDecoration(
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          width: 1,
-                          color: Colors.grey,
-                        ),
-                      ),
-                      fillColor: Colors.grey[200],
-                      filled: true,
-                      border: OutlineInputBorder(),
-                      labelText: 'Senha',
-                    ),
-                  ),
-                ),
-                SizedBox(
                   height: 10,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                  child: Column(
                     children: [
-                      Text(
-                        'Esqueceu sua senha?',
-                        style: GoogleFonts.plusJakartaSans(
-                          textStyle: TextStyle(
-                            color: Colors.blue,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15,
+                      Container(
+                        padding: EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Enviar',
+                            style: GoogleFonts.plusJakartaSans(
+                              textStyle: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Voltar',
+                            style: GoogleFonts.plusJakartaSans(
+                              textStyle: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
                           ),
                         ),
                       ),
                     ],
-                  ),
-                ),
-                SizedBox(
-                  height: 25,
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                  child: Container(
-                    padding: EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: Colors.deepPurple,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Entrar',
-                        style: GoogleFonts.plusJakartaSans(
-                          textStyle: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                          ),
-                        ),
-                      ),
-                    ),
                   ),
                 ),
               ],
