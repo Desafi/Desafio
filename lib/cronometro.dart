@@ -12,19 +12,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeApp(),
+      home: CronometroApp(),
     );
   }
 }
 
-class HomeApp extends StatefulWidget {
-  const HomeApp({Key? key});
+class CronometroApp extends StatefulWidget {
+  const CronometroApp({Key? key});
 
   @override
-  State<HomeApp> createState() => _HomeAppState();
+  State<CronometroApp> createState() => _CronometroAppState();
 }
 
-class _HomeAppState extends State<HomeApp> {
+class _CronometroAppState extends State<CronometroApp> {
   bool apareceBotoes = false;
   bool clicouVolta = false;
   bool cronometroRodando = false;

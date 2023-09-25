@@ -13,19 +13,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(),
-      home: LoginApp(),
+      home: EsqueciSenhaApp(),
     );
   }
 }
 
-class LoginApp extends StatefulWidget {
-  const LoginApp({super.key});
+class EsqueciSenhaApp extends StatefulWidget {
+  const EsqueciSenhaApp({super.key});
 
   @override
-  State<LoginApp> createState() => _LoginAppState();
+  State<EsqueciSenhaApp> createState() => _EsqueciSenhaAppState();
 }
 
-class _LoginAppState extends State<LoginApp> {
+class _EsqueciSenhaAppState extends State<EsqueciSenhaApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
