@@ -249,7 +249,7 @@ class _CronometroAppState extends State<CronometroApp> {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.amber,
-                    minimumSize: Size(180.0, 60.0), // Tamanho mínimo
+                    minimumSize: Size(180.0, 60.0),
                     shape: RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.circular(15.0), // Borda arredondada
@@ -278,7 +278,7 @@ class _CronometroAppState extends State<CronometroApp> {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.amber,
-                    minimumSize: Size(180.0, 60.0), // Tamanho mínimo
+                    minimumSize: Size(180.0, 60.0),
                     shape: RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.circular(15.0), // Borda arredondada
@@ -297,7 +297,7 @@ class _CronometroAppState extends State<CronometroApp> {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color.fromARGB(255, 255, 0, 0),
-                    minimumSize: Size(180.0, 60.0), // Tamanho mínimo
+                    minimumSize: Size(180.0, 60.0),
                     shape: RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.circular(15.0), // Borda arredondada
@@ -324,7 +324,7 @@ class _CronometroAppState extends State<CronometroApp> {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.amber,
-                    minimumSize: Size(180.0, 60.0), // Tamanho mínimo
+                    minimumSize: Size(180.0, 60.0),
                     shape: RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.circular(15.0), // Borda arredondada
@@ -343,10 +343,9 @@ class _CronometroAppState extends State<CronometroApp> {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color.fromARGB(255, 0, 140, 255),
-                    minimumSize: Size(180.0, 60.0), // Tamanho mínimo
+                    minimumSize: Size(180.0, 60.0),
                     shape: RoundedRectangleBorder(
-                      borderRadius:
-                          BorderRadius.circular(15.0), // Borda arredondada
+                      borderRadius: BorderRadius.circular(15.0),
                     ),
                   ),
                   child: Text('Retomar',

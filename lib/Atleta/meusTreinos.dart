@@ -36,6 +36,18 @@ class _MeusTreinosAppState extends State<MeusTreinosApp> {
               const SizedBox(
                 height: 50,
               ),
+              Center(
+                child: Text(
+                  'Meus Treinos',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 40,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
               SearchAnchor(
                   builder: (BuildContext context, SearchController controller) {
                 return SearchBar(
@@ -53,8 +65,10 @@ class _MeusTreinosAppState extends State<MeusTreinosApp> {
                 );
               }, suggestionsBuilder:
                       (BuildContext context, SearchController controller) {
-                return List<ListTile>.generate(5, (int index) {
-                  final String item = 'item $index';
+                List<String> items = [
+                  'Crawl',
+                ];
+                return items.map((String item) {
                   return ListTile(
                     title: Text(item),
                     onTap: () {
@@ -63,15 +77,84 @@ class _MeusTreinosAppState extends State<MeusTreinosApp> {
                       });
                     },
                   );
-                });
+                }).toList();
               }),
-              Center(
-                child: Text(
-                  'Meus Treinos',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 40,
-                  ),
+              const SizedBox(
+                height: 30,
+              ),
+              SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Card(
+                      child: Container(
+                        width: 400,
+                        height: 100,
+                        decoration: BoxDecoration(
+                            color: Color(0xFFF7F2FA),
+                            borderRadius: BorderRadius.circular(5)),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            CircleAvatar(
+                              radius: 40,
+                              backgroundImage:
+                                  AssetImage('assets/images/person.jpg'),
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('Estilo de treino: borboleta',
+                                    style: TextStyle(fontSize: 16)),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Text('Data do treino: 20/09/2023',
+                                    style: TextStyle(fontSize: 16)),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Card(
+                      child: Container(
+                        width: 400,
+                        height: 100,
+                        decoration: BoxDecoration(
+                            color: Color(0xFFF7F2FA),
+                            borderRadius: BorderRadius.circular(5)),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            CircleAvatar(
+                              radius: 40,
+                              backgroundImage:
+                                  AssetImage('assets/images/person.jpg'),
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('Estilo de treino: Crawl',
+                                    style: TextStyle(fontSize: 16)),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Text('Data do treino: 20/08/2023',
+                                    style: TextStyle(fontSize: 16)),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],

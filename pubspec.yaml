@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^6.0.0
+  ionicons: ^0.2.2
     
 
 
@@ -65,6 +66,7 @@ flutter:
      - assets/images/logoUnaerp.png
      - assets/images/Atleta.png
      - assets/images/Treinador.png
+     - assets/images/person.jpg
      
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

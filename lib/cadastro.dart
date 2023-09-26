@@ -237,8 +237,8 @@ class _CadastroAppState extends State<CadastroApp> {
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color.fromARGB(255, 23, 192, 204),
-
-                        minimumSize: Size(200.0, 60.0), // Tamanho mínimo
+                        
+                        minimumSize: Size(200.0, 60.0), 
                         shape: RoundedRectangleBorder(
                           borderRadius:
                               BorderRadius.circular(15.0), // Borda arredondada
@@ -264,7 +264,7 @@ class _CadastroAppState extends State<CadastroApp> {
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color.fromARGB(255, 197, 23, 0),
-                        minimumSize: Size(200.0, 60.0), // Tamanho mínimo
+                        minimumSize: Size(200.0, 60.0), 
                         shape: RoundedRectangleBorder(
                           borderRadius:
                               BorderRadius.circular(15.0), // Borda arredondada
