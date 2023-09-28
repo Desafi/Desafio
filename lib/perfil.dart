@@ -1,5 +1,19 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Meu Perfil',
+      home: MeuPerfil(),
+    );
+  }
+}
+
 class MeuPerfil extends StatelessWidget {
   const MeuPerfil({super.key});
 
@@ -57,7 +71,6 @@ class MeuPerfil extends StatelessWidget {
                     SizedBox(height: 80),
                     TextField(
                       decoration: InputDecoration(
-                        hintText: 'Nome',
                         labelText: 'Nome',
                         labelStyle: TextStyle(
                           color: Colors.black,
@@ -76,7 +89,6 @@ class MeuPerfil extends StatelessWidget {
                     SizedBox(height: 30), // Reduzi o espaçamento vertical
                     TextField(
                       decoration: InputDecoration(
-                        hintText: 'Email',
                         labelText: 'Email',
                         labelStyle: TextStyle(
                           color: Colors.black,
@@ -135,7 +147,6 @@ class MeuPerfil extends StatelessWidget {
               ),
             ],
           ),
-
           // icone de editar
           Padding(
             padding: EdgeInsets.only(bottom: 270, left: 184),
